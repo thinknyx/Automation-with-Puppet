@@ -3,7 +3,7 @@ package { "ntp":
 }
 
 file { "/etc/ntp.conf":
-	ensure	=> "file",
+	ensure	=> "present",
 	content	=> "server 0.centos.pool.ntp.org iburst
 server 1.centos.pool.ntp.org iburst
 server 2.centos.pool.ntp.org iburst\n"
@@ -43,7 +43,7 @@ package { "ntp":
 }
 
 file { "/etc/ntp.conf":
-        ensure  => "file",
+        ensure  => "present",
         content => "server 0.centos.pool.ntp.org iburst
 server 1.centos.pool.ntp.org iburst
 server 2.centos.pool.ntp.org iburst\n"
@@ -62,7 +62,7 @@ package { "ntp":
 }
 
 file { "/etc/ntp.conf":
-        ensure  => "file",
+        ensure  => "present",
         content => "server 0.centos.pool.ntp.org iburst
 server 1.centos.pool.ntp.org iburst
 server 2.centos.pool.ntp.org iburst\n"
