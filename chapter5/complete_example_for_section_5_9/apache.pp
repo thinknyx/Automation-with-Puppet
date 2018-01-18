@@ -13,7 +13,7 @@ class apachedemo {
 
 # Configuring simple index.html file with some test content
         file { "/var/www/html/index.html":
-                ensure  => "file",
+                ensure  => "present",
                 content => "<html>
         <body>
           <h1>Hello All, Thanks for your interest in learning configuration management tool Puppet with \"Automation with Puppet\" by Yogesh Raheja and Dennis McCarthy.This test is to install Apache webserver Application on \"yd1papp01.thinknyx.com\" Puppet Node \"using node definitions\" in Puppet </h1>
