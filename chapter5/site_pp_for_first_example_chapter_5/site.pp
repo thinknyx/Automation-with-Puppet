@@ -1,7 +1,7 @@
 # Writing a puppet code without Puppet Classes for creating a simple file
 
 file { "/var/tmp/firstmanifestfile":
-        ensure  => "file",
+        ensure  => "present",
         content => "My first file to understand real Puppet Master-Agent Architecture with Manifests\n",
 }
 
@@ -9,7 +9,7 @@ file { "/var/tmp/firstmanifestfile":
 
 class firstclass {
         file { "/var/tmp/secondmanifestfile":
-                ensure  => "file",
+                ensure  => "present",
                 content => "My second file to understand Puppe Master-Agent Architecture with class definition and declarartion with Manifests\n",
         }
 }
