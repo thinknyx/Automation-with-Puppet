@@ -1,5 +1,5 @@
 file { "/var/tmp/firstfile":
-	ensure	=> "file",
+	ensure	=> "present",
 	mode	=> "0777",
 	owner	=> "root",
 	group	=> "root",
