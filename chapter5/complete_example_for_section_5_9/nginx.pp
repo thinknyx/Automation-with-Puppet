@@ -13,7 +13,7 @@ class nginxdemo {
 
 # Configuring simple index.html file with some test content
         file { "/usr/share/nginx/html/index.html":
-                ensure  => "file",
+                ensure  => "present",
                 content => "<html>
         <body>
           <h1>Hello All, Thanks for your interest in learning configuration management tool Puppet with \"Automation with Puppet\" by Yogesh Raheja and Dennis McCarthy. This test is to install Nginx Application on all server using \"default node definitions\" in Puppet</h1>
