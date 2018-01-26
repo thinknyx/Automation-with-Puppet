@@ -1,3 +1,0 @@
-package { "talk":
-	ensure	=> "present",
-}
